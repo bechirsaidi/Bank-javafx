@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1088.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AppController">
+   <left>
+      <AnchorPane prefHeight="700.0" prefWidth="458.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="bgv" fitHeight="450.0" fitWidth="482.0" layoutX="11.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../bank.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane fx:id="root" prefHeight="700.0" prefWidth="698.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="psv" fitHeight="150.0" fitWidth="200.0" layoutX="247.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../pa.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="85.0" layoutY="284.0" text="UserName :" />
+            <JFXTextField fx:id="user" layoutX="202.0" layoutY="269.0" prefHeight="31.0" prefWidth="250.0" />
+            <Label layoutX="85.0" layoutY="386.0" text="Password :" />
+            <JFXButton layoutX="164.0" layoutY="493.0" onAction="#control_login" prefHeight="45.0" prefWidth="300.0" stylesheets="@stylesheet.css" text="Login" textFill="#ebe5e5">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="164.0" layoutY="565.0" onAction="#control_cancel" prefHeight="45.0" prefWidth="300.0" stylesheets="@stylesheet.css" text="Cancel" textFill="#ebe5e5">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </JFXButton>
+            <JFXPasswordField fx:id="passw" layoutX="199.0" layoutY="371.0" prefHeight="31.0" prefWidth="260.0" />
+            <Label fx:id="lbl" layoutX="206.0" layoutY="443.0" prefHeight="21.0" prefWidth="194.0" textFill="#eb0808" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

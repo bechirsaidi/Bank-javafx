@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mino" prefHeight="650.0" prefWidth="1000.0" style="-fx-background-color: #E6E6FA;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainViewEpaController">
+    <HBox alignment="CENTER_LEFT" layoutX="174.0" layoutY="204.0" prefHeight="100.0" prefWidth="490.0" AnchorPane.topAnchor="204.0">
+
+
+        <JFXTextField fx:id="firstNameField" maxHeight="-Infinity" maxWidth="-Infinity" prefColumnCount="0" prefHeight="60.0" prefWidth="490.0" promptText="First Name" unFocusColor="#0d0d0d" HBox.hgrow="ALWAYS">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </JFXTextField>
+    </HBox>
+    <HBox alignment="CENTER_LEFT" layoutX="174.0" layoutY="298.0" prefHeight="100.0" prefWidth="490.0">
+        <children>
+            <JFXTextField fx:id="lastNameField" maxHeight="-Infinity" maxWidth="-Infinity" prefColumnCount="0" prefHeight="60.0" prefWidth="490.0" promptText="Last Name" unFocusColor="BLACK">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </JFXTextField>
+        </children>
+    </HBox>
+    <HBox layoutX="174.0" layoutY="398.0" prefHeight="100.0" prefWidth="490.0">
+        <children>
+            <JFXTextField fx:id="accountNumberField" prefColumnCount="0" prefHeight="60.0" prefWidth="490.0" promptText="Numero De Compte :" unFocusColor="#070000">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </JFXTextField>
+        </children></HBox>
+    <JFXButton layoutX="430.0" layoutY="517.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleMakeNewAccount" prefHeight="60.0" prefWidth="240.0" stylesheets="@stylesheet.css" text="creer compte">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </JFXButton>
+
+    <JFXButton layoutX="163.0" layoutY="517.0" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleLogIn" prefHeight="60.0" prefWidth="240.0" stylesheets="@stylesheet.css" text="compte existe">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </JFXButton>
+    <Label layoutX="170.0" layoutY="5.0" prefHeight="150.0" prefWidth="524.0" text="Log In Epargne" textFill="#3c58fa">
+        <font>
+            <Font size="30.0" />
+        </font>
+        <graphic>
+            <ImageView fx:id="lg" fitHeight="150.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../../../../log.png" />
+                </image>
+            </ImageView>
+        </graphic>
+    </Label>
+</AnchorPane>
